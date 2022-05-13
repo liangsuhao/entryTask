@@ -5,3 +5,16 @@
   display: flex;
   align-items: center;
 }
+.topSearch {
+  margin-left: 10px;
+  width: 10vh;
+}
+.title {
+  width: 80vh;
+  text-align: center;
+}
+.topUser {
+  margin-right: 10px;
+  width: 10vh;
+  margin: auto;
+}

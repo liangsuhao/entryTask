@@ -23,10 +23,10 @@ body {
 .svg-icon path,
 .svg-icon polygon,
 .svg-icon rect {
-  fill: #bec0bf;
+  fill: #676968;
 }
 
 .svg-icon circle {
-  stroke: #bec0bf;
+  stroke: #676968;
   stroke-width: 1;
 }

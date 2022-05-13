@@ -6,7 +6,7 @@ import {
 } from "react-router-dom";
 import router from "./router/router";
 
-import TopNav from "./components/topNav/topNav"
+import TopNav from "./components/TopNav/TopNav"
 
 function App() {
   return (
