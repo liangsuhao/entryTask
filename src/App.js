@@ -6,13 +6,10 @@ import {
 } from "react-router-dom";
 import router from "./router/router";
 
-import TopNav from "./components/TopNav/TopNav"
-
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <TopNav></TopNav>
         { router }
       </BrowserRouter>
     </div>

@@ -1,0 +1,67 @@
+
+.Avatar {
+  height: 50vh;
+  width: 70%;
+  background-color: #cccccc;
+  margin: auto;
+  margin-top: 5vh;
+  margin-bottom: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.AvatarImg {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.info {
+  height: 23vh;
+}
+
+.loginButton {
+  height: 7vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.theButton {
+  width: 70%;
+  height: 7vh;
+  border: none;
+  background-color: var(--color-secondary);
+  color: white;
+}
+/* .theButton:hover {
+  background-color: var(--color-primary-bg-for-transparent);
+} */
+.container {
+  border: 1px solid #cccccc;
+  width: 70%;
+  display: flex;
+  margin: auto;
+  padding: 5px 0;
+  margin-bottom: 5px;
+  height: 30px;
+  align-items: center;
+}
+
+.userId {
+  border: none;
+  outline:none;
+  font-size: 15px;
+}
+
+.password {
+  border: none;
+  outline:none;
+  font-size: 15px;
+}
+
+.icon {
+  margin: 0 5px 0 5px;
+}
