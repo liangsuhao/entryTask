@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 
+import activityApi from '../../api/activity';
 import style from "./home.module.css";
 
 function Home() {
@@ -14,7 +15,13 @@ function Home() {
       {id:"4",title:'活动4',content:'我是活动4',tags:[{name:'srf'},{name:'456'}],likeNum:4,writer:"name4"},
       {id:"5",title:'活动5',content:'我是活动5',tags:[{name:'wr'},{name:'7yf'}],likeNum:5,writer:"name5"}
     ];
-    setActivities(fakeActivities);
+    let params = {};
+    activityApi.getAllActivity(params).then((arr)=>{
+      console.log(arr);
+      if(arr.data.flag) {
+        setActivities(arr.data);
+      }
+    });
   },[])
 
   return (

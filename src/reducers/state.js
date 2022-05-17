@@ -1,5 +1,6 @@
 import {
-  ACTION_SET_FROM
+  ACTION_SET_FROM,
+  TOKEN_SAVE
 } from "../actions/index";
 
 const state = (state = {}, action) => {
@@ -9,4 +10,18 @@ const state = (state = {}, action) => {
   }
 }
 
-export default state;
+export default {
+  token(state = localStorage.getItem('token'),action) {
+    const { type, payload } = action;
+    switch (type) {
+      case TOKEN_SAVE:{
+        localStorage.setItem('token',payload);
+        return payload;
+      }
+      default:
+    }
+
+    return state;
+  }
+
+};

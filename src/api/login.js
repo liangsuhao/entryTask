@@ -5,7 +5,7 @@
 import axios from '../utils/request';
 import qs from 'qs';
 
-const baseUrl = "http://localhost:3000";
+const baseUrl = "http://localhost:3004";
 // const baseUrl = "";
 
 const signApi = {
